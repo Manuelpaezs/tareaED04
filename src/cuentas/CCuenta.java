@@ -14,7 +14,7 @@ public class CCuenta {
 	private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
     
     /**
      * Constructor por defecto de la clase CCuenta
@@ -25,10 +25,10 @@ public class CCuenta {
     
     /**
      * Constructor de la clase CCuenta
-     * @param nombre del dueño de la cuenta
-     * @param numero de la cuenta
-     * @param saldo de la cuenta
-     * @param tipo de interés aplicado
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo
      */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
@@ -48,7 +48,7 @@ public class CCuenta {
     
     /**
      * Método para ingresar dinero en la cuenta
-     * @param cantidad a ingresar
+     * @param cantidad
      * @throws Exception si el importe a ingresar es negativo
      */
     public void ingresar(double cantidad) throws Exception
@@ -60,7 +60,7 @@ public class CCuenta {
     
     /**
      * Método para retirar dinero
-     * @param cantidad a retirar
+     * @param cantidad
      * @throws Exception si el importe a retirar es negativo o no hay suficiente saldo
      */
     public void retirar(double cantidad) throws Exception
@@ -124,15 +124,15 @@ public class CCuenta {
 	 * Getter del tipo de interés
 	 * @return tipoInteres
 	 */
-	public double getTipoInterés() {
-		return tipoInterés;
+	public double getTipoInteres() {
+		return tipoInteres;
 	}
 	
 	/**
 	 * Modifica el tipo de interés
-	 * @param tipoInterés
+	 * @param tipoInteres
 	 */
-	public void setTipoInterés(double tipoInterés) {
-		this.tipoInterés = tipoInterés;
+	public void setTipoInteres(double tipoInteres) {
+		this.tipoInteres = tipoInteres;
 	}
 }
